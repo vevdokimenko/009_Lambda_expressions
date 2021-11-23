@@ -7,7 +7,6 @@ package homework;
  * */
 
 import java.util.function.Consumer;
-import java.util.function.Supplier;
 
 public class Task3 {
     public static void main(String[] args) {
@@ -73,9 +72,4 @@ class Book {
                 ", pagesCount=" + pagesCount +
                 '}';
     }
-}
-
-@FunctionalInterface
-interface NewBook {
-    Book set(String title, String author, int pagesCount);
 }
