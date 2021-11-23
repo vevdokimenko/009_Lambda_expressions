@@ -23,7 +23,8 @@ public class Task2 {
 
         list.stream()
                 .sorted((i1, i2) -> i2 - i1)
-                .skip(list.size() - 5)
+//                .skip(list.size() - 5)
+                .limit(list.size() - 5)
                 .forEach(System.out::println);
     }
 }
